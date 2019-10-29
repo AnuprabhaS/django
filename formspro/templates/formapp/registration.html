@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "formapp/base.html" %}
+    {% block body_block%}
+<h1>RegisterHere</h1>
+
+<table>
+    <form action="{%url 'register' %}" method="post">
+         {% csrf_token %}
+{{ form.as_p }}
+
+    </form>
+
+</table>
+    {% endblock %}
