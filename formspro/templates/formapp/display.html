@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "formapp/base.html" %}
+    {% block body_block%}
+<table>
+{% for i in data %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.total}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% endblock %}
